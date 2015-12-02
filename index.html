@@ -1,1 +1,244 @@
-<p>future home of Advanced Communications Electronics website :)</p>
+<?php
+require_once('../analytics-web-site-traffic/Open-Web-Analytics-master/owa_php.php');
+
+$owa = new owa_php();
+// Set the site id you want to track
+$owa->setSiteId('bd64e8fe44ab2f90aa6d813f69fe0953');
+// Uncomment the next line to set your page title
+$owa->setPageTitle('home page');
+// Set other page properties
+//$owa->setProperty('foo', 'bar');
+$owa->trackPageView();
+?>
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+	<meta name="description" content="Harry McKinney's Advanced Communications Electronics, delivering the Best in Satellite Entertainment and Intelligence since 1979"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msvalidate.01" content="1012B4DA3ECC7F603E0E8132F7ABCF90" />
+    <title>Advanced Communications Electronics Inc.</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<script src="js/vendor/modernizr.js"></script>
+
+	<!-- SMOOTH SCROLL -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	$(function() {
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+		}
+		}
+	});
+	});
+	</script>
+	<!-- End of SMOOTH SCROLL -->
+
+				<script>
+				var message = "function disabled";
+				function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+				if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); return false; } }
+				document.onmousedown = rtclickcheck;
+				</script>
+
+  </head>
+  <body>
+
+    <div class="outside_border">
+
+   <div class="row"><div id="top"></div>
+        <div class="large-3 columns">
+          <h1><img src="img/ace_website_logo.png" alt="Advanced Communications Electronics Inc. Logo" title="ACE Inc. Satellite Communications since 1979"></h1>
+        </div>
+        <div class="large-9 columns">
+          <ul class="button-group right">
+            <li><a href="#directv" class="button">DirecTV</a></li>
+            <li><a href="#exede" class="button">Exede</a></li>
+            <li><a href="#theatre" class="button">Theatre</a></li>
+            <li><a href="#wiring" class="button">Wiring</a></li>
+			<li><a href="#video" class="button">Video</a></li>
+			<li><a href="#contact" class="button">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="large-12 columns">
+          <img src="img/ace_website_main.png" alt="Since 1979 Advanced Communications Electronics has been a leader and an expert in Satellite Television, Satellite Internet, Home Theater Creation, Set up and Installation as well as Smart Home Automation and Structured Wiring" title="Contact ACE today for Satellite TV, Internet, Smart Home Automation, Home Theater and Structured Wiring">
+          <hr>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="large-4 columns">
+          <img src="img/ace_website_directv_logo.png" alt="directv logo" title="ACE Inc. DirecTV since 1994">
+        </div>
+        <div class="large-8 columns"><div id="directv"></div>
+          <h4>DirecTV</h4>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>We were one of the 1st companies in the world to install DirecTV from its initial product launch in 1994, although the product has advanced a lot since then, we are still providing the same great service with each installation. Contact us today to book your appointment.</p>
+            </div>
+            <div class="large-6 columns">
+              <p>Today we are installing DirecTV on many different types of homes and businesses, no wonder it's grown to be the #1 provider in the US. With it's current tech we can run an entire apartment building or sports bar on one single dish.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	   <hr>
+
+      <div class="row">
+        <div class="large-8 columns"><div id="exede"></div>
+          <h4>Exede High Speed Internet</h4>
+
+          <p>We have been excited about Exede since it's creation, it outperforms all other internet by satellite providers and offers a IP home telephone option (unlike it's competition), most units are performing 3x their contract speed and our Clients are Happy with the easy to manage service!</p>
+
+          <p>Exede's High Speed Internet is not only outperforming it's direct competition but they are outperforming local ISP's, in the past 2 years we have been replacing cable systems with Exede's Satellite Service. <a href="contact.php">Contact us</a> Today to find out more!</p>
+
+        </div>
+        <div class="large-4 columns">
+          <img src="img/ace_website_exede_logo.png" alt="Ace Inc. offers the Exede High Speed Internet Solution" title="Ace Inc.offers Expert Installation & Network Solutions with Exede">
+        </div>
+      </div>
+
+	  <hr>
+
+	  <div class="row">
+        <div class="large-4 columns">
+          <img src="img/ace_website_home_theatre.png" alt="Advanced Communications does state of the art home theatre designs" title="Contact ACE inc. today about designing and building your next home theatre">
+        </div>
+        <div class="large-8 columns"><div id="theatre"></div>
+          <h4>Home Theatre</h4>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>Ready for your Dream Home Theater? Contact us today, regardless of your style we have the expert advice and experience you need to ensure your theater is built exactly like your ideal image of what it should be.</p>
+            </div>
+            <div class="large-6 columns">
+              <p>We offer home theaters that take advantage of local and cloud service entertainment options. We are also uniquely qualified and hold several certificates to integrate all of your technologies and entertainment options into one device.</p>
+				<p><a href="#top">Back to the Top</a></p>
+		   </div>
+          </div>
+        </div>
+      </div>
+
+	  <hr>
+
+	  <div class="row">
+        <div class="large-8 columns"><div id="wiring"></div>
+          <h4>Structural Wiring</h4>
+
+          <p>Who you pick to wire your home is a BIG deal. We offer structural wiring for a competitive price that will not only fit your requirements for the present but also for the future. We follow all building codes (and hold a GC license), we double wire and offer flexible, scalable solutions.</p>
+
+          <p>We not only plan and wire your home or business but we can write and implement the software for your smart home automation project. We have more than 10 yrs experience in this arena, so place your trust in ACE for all of your home and business wiring needs.</p>
+
+        </div>
+        <div class="large-4 columns">
+          <img src="img/ace_website_wiring.png" alt="ACE has a TON of Experience in Structural Wiring for Smart Home Automation Development and Design" title="ACE has a TON of Experience in Structural Wiring for Smart Home Automation Development and Design">
+
+        </div>
+      </div>
+
+	  <hr>
+
+	  <div class="row">
+        <div class="large-8 columns"><div id="video"></div>
+          <h4>Video Surveillance</h4>
+
+          <p>We have been building state of the art, flexible, scalable and functional video surveillance systems for more than a decade now. We are the "go to guys" for many of the largest companies in America when it comes to their video security needs.</p>
+
+          <p>All of our systems come with the capability to access them remotely through a smart phone or a computer at another location (as long as there is an internet connection), the connections we provide use 256-hash encryption algorithms so you can rest assured that your system is solid and secure!</p>
+			<p><a href="#top">Back to the Top</a></p>
+        </div>
+        <div class="large-4 columns">
+          <img src="img/ace_website_video.png" alt="ACE has always offered video surveillance systems to their customers" title="get a video surveillance system from ACE today!">
+
+        </div>
+      </div>
+
+	  <hr>
+
+	  <div class="row">
+        <div class="large-4 columns">
+          <img src="img/ace_website_contact_us.png" alt="contact ACE inc today, by phone at 865 927 7777 or by email" title="contact ACE inc today!">
+        </div>
+        <div class="large-8 columns"><div id="contact"></div>
+          <h4>Contact Us</h4>
+          <div class="row">
+            <div class="large-6 columns">
+              <p>Have Questions? Ready to schedule an appointment? Need a FREE quote? Give us a Call at <a href="tel:8659277777">865-927-7777</a> or you can send us an email by clicking <a href="contact.php">here</a></p>
+            </div>
+            <div class="large-6 columns">
+              <p>We Thank you for your Business and we Appreciate your Business!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+	  <hr/>
+
+	  <div class="row">
+        <div class="large-4 columns">
+          <img src="img/ace_website_direct_dishes.png" alt="Ace Installs Dishes for Large Buildings" title="Every apartment needs a dish!">
+        </div>
+		<div class="large-4 columns">
+          <img src="img/ace_website_commercial.png" alt="Ace installs many commercial satellite dishes and systems" title="Ace maintains and installs many commercial satellite applications">
+        </div>
+		<div class="large-4 columns">
+          <img src="img/ace_website_footer_3.png" alt="exede satellite dish" title="ACE installs Exede High Speed Internet">
+        </div>
+		</div>
+
+		<footer class="row">
+        <div class="large-12 columns">
+          <hr/>
+          <div class="row">
+            <div class="large-6 columns">
+              <p><?php echo date('Y')?> &copy; Advanced Communications Electronics Inc.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="#directv"><p style="color:black">DirecTV</p></a></li>
+                <li><a href="#exede"><p style="color:black">Exede Internet</p></a></li>
+				<li><a href="#video"><p style="color:black">Surveillance</p></a></li>
+				<li><a href="#wiring"><p style="color:black">Structured Wiring</p></a></li>
+				<li><a href="#theatre"><p style="color:black">Home Theatre</p></a></li>
+				<li><a href="faq.php"><p style="color:black">Dish Network</p></a></li>
+				<li><a href="faq.php"><p style="color:black">faq</p></a></li>
+				<li><a href="sitemap.xml"><p style="color:black">sitemap</p></a></li>
+				<li><a href="contact.php"><p style="color:black">send us an email</p></a></li>
+				<li><a href="tel:8659277777"><p style="color:black"><mark>865-927-7777</mark></p></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+		<div class="row">
+        <div class="large-4 columns">
+		<p><a href="#top">Back to the Top</a></p>
+		<span><a href="http://www.4point0designs.com/index.php"><span style="color:black">4.0 designs</span></a></span>
+		</div>
+		</div>
+
+		</div><!--end outside border div-->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>
