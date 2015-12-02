@@ -1,0 +1,189 @@
+<?php
+require_once('../analytics-web-site-traffic/Open-Web-Analytics-master/owa_php.php');
+
+$owa = new owa_php();
+// Set the site id you want to track
+$owa->setSiteId('bd64e8fe44ab2f90aa6d813f69fe0953');
+// Uncomment the next line to set your page title
+$owa->setPageTitle('contact page');
+// Set other page properties
+//$owa->setProperty('foo', 'bar');
+$owa->trackPageView();
+?>
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+	<meta name="description" content="Harry McKinney's Advanced Communications Electronics, delivering the Best in Satellite Entertainment and Intelligence since 1979"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Communications Electronics Inc.</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+	<script src="js/vendor/modernizr.js"></script>
+
+	<!-- SMOOTH SCROLL -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+	$(function() {
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+		}
+		}
+	});
+	});
+	</script>
+	<!-- End of SMOOTH SCROLL -->
+
+				<script>
+				var message = "function disabled";
+				function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+				if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { 	alert(message); return false; } }
+				document.onmousedown = rtclickcheck;
+				</script>
+
+  </head>
+  <body>
+
+    <div class="outside_border">
+
+   <div class="row"><div id="top"></div>
+        <div class="large-3 columns">
+          <h1><img src="img/ace_website_logo.png" alt="Advanced Communications Electronics Inc. Logo" title="ACE Inc. Satellite Communications since 1979"></h1>
+        </div>
+        <div class="large-9 columns">
+          <ul class="button-group right">
+            <li><a href="index.php" class="button">Home</a></li>
+			<li><a href="faq.php" class="button">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+	   <hr>
+
+      <div class="row">
+        <div class="large-8 columns"><div id="box_1"></div>
+          <h4>Welcome to our Contact Page</h4>
+
+          <p>Have a Question? Great, send us an email!</p>
+
+          <p>Need to ask us over the phone? Call us at: <a href="tel:8659277777"><mark>865-927-7777</mark></a></p>
+
+        </div>
+        <div class="large-4 columns">
+          <img src="img/ace_website_contact_us_here.png" alt="Contact Harry McKinney in Knoxville TN at Advanced Communications Electronics Inc." title="Ace is here to answer all of your questions!">
+        </div>
+      </div>
+
+	  <hr>
+
+	  <!--form here-->
+
+
+	  <div id="contact">
+	<div class="row">
+		<div class="large-12 columns">
+
+<form id='contactus' action='send.php' method='post' enctype="multipart/form-data" accept-charset='UTF-8'>
+<fieldset>
+<legend>Contact Advanced Communications Electronics Inc.</legend>
+
+<div class="required_fields">* required fields</div>
+
+<div class='container'>
+    <label for='name' >Your Full Name*: </label><br/>
+    <input type='text' name='name' placeholder="Please Enter Your Name Here" id='name' maxlength="60" class="large-5 columns" /><br/>
+    <span id='contactus_name' class='form_text'></span>
+</div>
+
+<div class='container'>
+    <label for='email' >Email Address*:</label><br/>
+    <input type='text' name='email' placeholder='e-mail address' id='email' maxlength="60" class="large-5 columns"/><br/>
+    <span id='contactus_email' class='form_text'></span>
+</div>
+
+<div class='container'>
+    <label for='email' >Telephone #:</label><br/>
+    <input type='text' name='phone' placeholder='Your Phone Number' id='phone' maxlength="60" class="large-5 columns"/><br/>
+    <span id='contactus_email' class='form_text'></span>
+</div>
+
+<div class='container'>
+    <label for='message' >Message:</label><br/>
+    <span id='contactus_message' class='form_text'></span>
+    <textarea rows="10" cols="50" name='message' placeholder='message here' id='message'></textarea>
+</div>
+
+<div>
+    <input type='submit' name='submit' value='submit' id='submit'/>
+</div>
+
+</fieldset>
+</form>
+
+	</div>
+		<hr/>
+			</div>
+				</div>
+
+
+	  <!--end form-->
+
+	  <hr/>
+
+	  <div class="row">
+        <div class="large-4 columns">
+          <img src="img/ace_website_direct_dishes.png" alt="Contact Harry McKinney at Advanced Communications Electronics Inc. in Knoxville TN here" title="Every apartment needs a dish!">
+        </div>
+		<div class="large-4 columns">
+          <img src="img/ace_website_commercial.png" alt="Ace installs many commercial satellite dishes and systems" title="Ace maintains and installs many commercial satellite applications">
+        </div>
+		<div class="large-4 columns">
+          <img src="img/ace_website_footer_3.png" alt="exede satellite dish" title="ACE installs Exede High Speed Internet">
+        </div>
+		</div>
+
+
+		<div class="row">
+        <div class="large-4 columns">
+		<p><a href="#top">Back to the Top</a></p>
+		</div>
+		</div>
+
+		<footer class="row">
+        <div class="large-12 columns">
+          <hr/>
+          <div class="row">
+            <div class="large-6 columns">
+              <p><?php echo date('Y')?> &copy; Advanced Communications Electronics Inc.</p>
+            </div>
+            <div class="large-6 columns">
+              <ul class="inline-list right">
+                <li><a href="index.php"><p style="color:black">back to the main page</p></a></li>
+				<li><a href="faq.php"><p style="color:black">check our faq page</p></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+		</div><!--end outside border div-->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>
+
+
+	  
