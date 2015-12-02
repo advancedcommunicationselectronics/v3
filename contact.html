@@ -1,17 +1,4 @@
-<?php
-require_once('../analytics-web-site-traffic/Open-Web-Analytics-master/owa_php.php');
-
-$owa = new owa_php();
-// Set the site id you want to track
-$owa->setSiteId('bd64e8fe44ab2f90aa6d813f69fe0953');
-// Uncomment the next line to set your page title
-$owa->setPageTitle('contact page');
-// Set other page properties
-//$owa->setProperty('foo', 'bar');
-$owa->trackPageView();
-?>
-
-<!doctype html>
+<!DOCTYPE HTML>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
@@ -184,6 +171,3 @@ $owa->trackPageView();
 
   </body>
 </html>
-
-
-	  
